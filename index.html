@@ -1,45 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicios - NEORIS</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEORIS - Innovación y Tecnología</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">NEORIS</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="servicios.html">Inicio</a></li>
-        <li><a href="industrias.html">Industrias</a></li>
-        <li><a href="nosotros.html">Sobre nosotros</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="hero" style="background: #004d4d;">
-    <div class="hero-content">
-      <h1>Nuestros Servicios</h1>
-      <p>Innovación y tecnología al servicio de tu negocio</p>
-    </div>
-  </section>
+    <header id="s1">
+        <h1>NEORIS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="industrias.html">Industrias</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section class="section-highlight">
-    <div class="container">
-      <h2>¿Qué ofrecemos?</h2>
-      <p>Desde consultoría digital, desarrollo de software, inteligencia artificial hasta soluciones en la nube, ayudamos a nuestros clientes a evolucionar y liderar su industria.</p>
-    </div>
-  </section>
+    <section id="s2">
+        <h2>NEORIS: Acelerando la Transformación Digital</h2>
+        <p>NEORIS es una empresa global de aceleración digital que ayuda a las empresas a transformarse y crecer mediante la aplicación de tecnologías y soluciones personalizadas. Nos especializamos en la ejecución de proyectos complejos de transformación digital para clientes en diversos sectores como manufactura, banca, consumo y retail, telecomunicaciones y medios, entre otros. </p> <br>
+        <p>NEORIS combina el conocimiento profundo de la industria con la experiencia tecnológica para crear soluciones que abordan desafíos específicos del negocio y fomentan el crecimiento disruptivo. La empresa cuenta con más de 20 años de experiencia como socio digital de grandes empresas a nivel mundial, liderando su transformación digital con una perspectiva orientada a los negocios y equipos técnicos especializados. </p>
+    </section>
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/zF4G15daHfk?si=iVHDpqGfCjQ5HKx6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <section id="s3">
+        <h2>Noticias Relevantes</h2>
+        <section id="noticias-slider">
+            <article class="noticia visible">
+                <figure>
+                    <img src="noticia1.jpg" alt="Noticia 1">
+                    <figcaption>NEORIS es nombrada Partner del Año en Innovación Digital por Microsoft.</figcaption>
+                </figure>
+            </article>
+            <article class="noticia">
+                <figure>
+                    <img src="noticia2.jpg" alt="Noticia 2">
+                    <figcaption>Expansión global: NEORIS abre nuevas oficinas en Dubái.</figcaption>
+                </figure>
+            </article>
+            <article class="noticia">
+                <figure>
+                    <img src="noticia3.jpg" alt="Noticia 3">
+                    <figcaption>NEORIS desarrolla IA para procesos industriales en la industria automotriz.</figcaption>
+                </figure>
+            </article>
+            <article class="noticia">
+                <figure>
+                    <img src="noticia4.jpg" alt="Noticia 4">
+                    <figcaption>Alianza con SAP para transformar empresas latinoamericanas.</figcaption>
+                </figure>
+            </article>
+            <article class="noticia">
+                <figure>
+                    <img src="noticia5.jpg" alt="Noticia 5">
+                    <figcaption>Reconocida entre las mejores empresas para trabajar en México.</figcaption>
+                </figure>
+            </article>
+        </section>
+    </section>
 
-  <footer class="footer">
-    <p>&copy; 2025 NEORIS. Todos los derechos reservados.</p>
-  </footer>
+    <section id="s4">
+        <h2>¿Dónde Estamos?</h2>
+        <p>Tenemos presencia en más de 14 países, incluyendo Estados Unidos, México, España, Brasil, Argentina, India y Emiratos Árabes Unidos.</p>
+    </section>
+
+    <section id="s5">
+        <h2>Misión, Visión y Valores</h2>
+        <p><strong>Misión:</strong> Impulsar el crecimiento de nuestros clientes con soluciones digitales innovadoras.</p>
+        <p><strong>Visión:</strong> Ser líderes globales en acelerar la transformación digital.</p>
+        <p><strong>Valores:</strong> Innovación, Compromiso, Excelencia, Colaboración, Responsabilidad.</p>
+    </section>
+
+    <footer id="s6">
+        <p>&copy; 2025 NEORIS. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const noticias = document.querySelectorAll('.noticia');
+        let i = 0;
+        function mostrarNoticia() {
+            noticias.forEach(n => n.classList.remove('visible'));
+            noticias[i].classList.add('visible');
+            i = (i + 1) % noticias.length;
+        }
+        setInterval(mostrarNoticia, 10000);
+    </script>
+
 </body>
 </html>

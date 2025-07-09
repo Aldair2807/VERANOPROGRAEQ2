@@ -1,40 +1,43 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Industrias - NEORIS</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <title>Industrias - NEORIS</title>
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">NEORIS</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="servicios.html">Inicio</a></li>
-        <li><a href="industrias.html">Industrias</a></li>
-        <li><a href="nosotros.html">Sobre nosotros</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="hero" style="background: #001f3f;">
-    <div class="hero-content">
-      <h1>Soluciones por Industria</h1>
-      <p>Transformamos sectores clave con tecnología e innovación</p>
-    </div>
-  </section>
+    <header id="s1">
+        <h1>NEORIS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="industrias.html">Industrias</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section class="section-highlight">
-    <div class="container">
-      <h2>Expertos en sectores estratégicos</h2>
-      <p>Desde salud, finanzas, retail hasta manufactura. Entendemos los retos y proponemos soluciones adaptadas a cada industria.</p>
-    </div>
-  </section>
+    <section id="s2">
+        <h2>Industrias</h2>
+        <p>NEORIS es una aceleradora digital fundada en el año 2000 como parte de una iniciativa de CEMEX, una de las compañías cementeras más grandes del mundo. La idea surgió para apoyar los procesos de transformación digital dentro de la propia CEMEX, lo que impulsó rápidamente a NEORIS a convertirse en una consultora tecnológica independiente.</p>
+        <p>Gracias a su visión innovadora y a su profundo conocimiento en tecnología y procesos de negocio, NEORIS comenzó a expandirse a otras industrias, incluyendo Banca y Servicios Financieros, Salud, Telecomunicaciones, Manufactura, Retail y Energía.</p>
+        <p>Actualmente, NEORIS tiene presencia en más de 14 países, con oficinas en lugares estratégicos como México, Estados Unidos, España, Brasil, Argentina, Colombia, India, y Emiratos Árabes Unidos. Su enfoque global le permite atender tanto a empresas locales como a corporaciones multinacionales.</p>
+        <p>Entre sus metas más importantes para la próxima década, NEORIS busca consolidarse como un líder global en inteligencia artificial aplicada a la industria, desarrollando soluciones que optimicen procesos productivos, mejoren la experiencia del cliente y generen ventajas competitivas sostenibles para sus clientes en todo el mundo.</p>
+        <p>Además, NEORIS aspira a ampliar su participación en sectores clave como Energía Renovable, Smart Cities, y el desarrollo de plataformas digitales para la industria 4.0, apuntando a ser un actor estratégico en la transición hacia economías más sostenibles e interconectadas.</p>
+    </section>
+    
+    <figure id="industria-img">
+        <img src="industria.jpg" alt="Industria NEORIS">
+        <figcaption>Transformación digital en las principales industrias a nivel mundial.</figcaption>
+    </figure>
 
-  <footer class="footer">
-    <p>&copy; 2025 NEORIS. Todos los derechos reservados.</p>
-  </footer>
+    <footer id="s6">
+        <p>&copy; 2025 NEORIS. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
